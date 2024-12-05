@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.app {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+  background: linear-gradient(135deg, #ece9e6, #ffffff);
+  color: #333;
+  min-height: 100vh;
+}
+
+.app-header {
+  background: linear-gradient(90deg, #4e54c8, #8f94fb);
+  padding: 20px;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.note-input {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.note-input input {
+  padding: 12px 16px;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border 0.3s;
+}
+
+.note-input input:focus {
+  border-color: #8f94fb;
+  outline: none;
+}
+
+.note-input button {
+  padding: 10px 25px;
+  background: linear-gradient(90deg, #8f94fb, #4e54c8);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.note-input button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #4e54c8, #8f94fb);
+}
+
+.notes-list {
+  max-width: 600px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.note {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.note:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.note.important {
+  background: #fff4e5;
+  border-left: 6px solid #ffc107;
+}
+
+.note-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.note-content p {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.note-content .note-date {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 4px;
+}
+
+.note-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.note-actions button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.note-actions button:hover {
+  color: #007bff;
+}
+
+.note-actions button:nth-child(2):hover {
+  color: #dc3545;
+}
+
+.no-notes {
+  color: #777;
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-top: 20px;
+}
